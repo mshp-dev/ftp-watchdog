@@ -1,0 +1,13 @@
+{
+  "SETAD_HOST": "sft.iranet.net",
+  "SETAD_PORT": 9022,
+  "SETAD_USERNAME": "sita2",
+  "SETAD_PASSWORD": "Sita2@Sita32022",
+  "SETAD_PATH": "/Sync_Shared_Folder/Recieved_From_IRANET/Imported_Webuser/",
+  "SITA2_HOST": "192.168.149.157",
+  "SITA2_PORT": 22,
+  "SITA2_USERNAME": "portal.sita",
+  "SITA2_PASSWORD": "Portal@sita2#110",
+  "SITA2_PATH": "/Imported_Webuser/",
+  "CHECK_INTERVAL": 5
+}
