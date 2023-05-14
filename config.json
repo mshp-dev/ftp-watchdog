@@ -1,13 +1,38 @@
 {
-  "SETAD_HOST": "sft.iranet.net",
-  "SETAD_PORT": 9022,
-  "SETAD_USERNAME": "sita2",
-  "SETAD_PASSWORD": "Sita2@Sita32022",
-  "SETAD_PATH": "/Sync_Shared_Folder/Recieved_From_IRANET/Imported_Webuser/",
-  "SITA2_HOST": "192.168.149.157",
-  "SITA2_PORT": 22,
-  "SITA2_USERNAME": "portal.sita",
-  "SITA2_PASSWORD": "Portal@sita2#110",
-  "SITA2_PATH": "/Imported_Webuser/",
-  "CHECK_INTERVAL": 5
+  "LOG_PATH": "sftp_watchdog.log",
+  "CHECK_INTERVAL": 5,
+  "LOCAL_PATHS": ["D:\\SITA2\\ftp_watchdog\\new_files\\", "D:\\SITA2\\ftp_watchdog\\new_files2\\"],
+  "OPERATION_MODES": [
+    {
+      "LOCALS_TO_SFTPS": false,
+      "REMOVE_SOURCE_FILE": false
+    },
+    {
+      "SFTPS_TO_LOCALS": false,
+      "REMOVE_SOURCE_FILE": false
+    },
+    {
+      "SFTPS_TO_SFTPS": true,
+      "REMOVE_SOURCE_FILE": true,
+      "KEEP_COPY_IN_LOCAL": true
+    }
+  ],
+  "HOSTS": [
+    {
+      "ADDRESS": "sft.iranet.net",
+      "PORT": 9022,
+      "USERNAME": "sita2",
+      "PASSWORD": "Sita2@Sita32022",
+      "PATH": "/Test/",
+      "ROLE": "SOURCE"
+    },
+    {
+      "ADDRESS": "sft.iranet.net",
+      "PORT": 9022,
+      "USERNAME": "m_shokripasha@iranet.net",
+      "PASSWORD": "110#mshp@IRNT",
+      "PATH": "/OPR/",
+      "ROLE": "DESTINATION"
+    }
+  ]
 }
